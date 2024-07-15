@@ -1,0 +1,1355 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     41486,       1346]
+NotebookOptionsPosition[     35880,       1148]
+NotebookOutlinePosition[     36222,       1163]
+CellTagsIndexPosition[     36179,       1160]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"continuedFraction", "[", 
+   RowBox[{"x_", ",", " ", "n_Integer"}], "]"}], " ", ":=", " ", 
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{"n", " ", "\[Equal]", "0"}], ",", " ", 
+    RowBox[{"{", "}"}], ",", " ", 
+    RowBox[{"Prepend", "[", 
+     RowBox[{
+      RowBox[{"continuedFraction", "[", 
+       RowBox[{
+        RowBox[{"1", "/", 
+         RowBox[{"(", 
+          RowBox[{"x", "-", 
+           RowBox[{"Floor", "[", "x", "]"}]}], ")"}]}], ",", " ", 
+        RowBox[{"n", "-", "1"}]}], "]"}], ",", " ", 
+      RowBox[{"Floor", "[", "x", "]"}]}], "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.4868250331374207`*^9, 3.486825113103882*^9}, {
+  3.4868251725171213`*^9, 3.486825187987442*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"continuedFraction", "[", 
+  RowBox[{"Pi", ",", "10"}], "]"}]], "Input",
+ CellChangeTimes->{{3.4868251013882303`*^9, 3.486825105637767*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "3", ",", "7", ",", "15", ",", "1", ",", "292", ",", "1", ",", "1", ",", 
+   "1", ",", "2", ",", "1"}], "}"}]], "Output",
+ CellChangeTimes->{{3.486825106019404*^9, 3.486825118360154*^9}, 
+   3.486825191709415*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"continuedFraction", "[", 
+  RowBox[{
+   RowBox[{"Sqrt", "[", "2", "]"}], ",", " ", "10"}], "]"}]], "Input",
+ CellChangeTimes->{{3.4868252004427423`*^9, 3.48682520580578*^9}, {
+  3.486825295319459*^9, 3.486825311206526*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "2", ",", "2", ",", "2", ",", "2", ",", "2", ",", "2", ",", "2", 
+   ",", "2", ",", "2"}], "}"}]], "Output",
+ CellChangeTimes->{3.4868253120750093`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"continuedFraction", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{"Sqrt", "[", "5", "]"}]}], ")"}], "/", "2"}], ",", " ", "10"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.486825314776594*^9, 3.486825327245829*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", ",", "1", 
+   ",", "1", ",", "1"}], "}"}]], "Output",
+ CellChangeTimes->{3.4868253276263943`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"continuedFraction", "::", "\"\<usage\>\""}], " ", "=", " ", 
+  "\"\<continuedFraction[x,n] returns the first n terms of the continued \
+fraction of x\>\""}]], "Input",
+ CellChangeTimes->{{3.486825352677616*^9, 3.486825437825934*^9}}],
+
+Cell[BoxData["\"\<continuedFraction[x,n] returns the first n terms of the \
+continued fraction of x\>\""], "Input",
+ CellChangeTimes->{{3.486909219722377*^9, 3.486909232108225*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"fib", "[", "n_", "]"}], " ", ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"a", "=", "1"}], ",", 
+      RowBox[{"b", "=", "0"}], ",", 
+      RowBox[{"count", " ", "=", "n"}]}], "}"}], ",", " ", 
+    RowBox[{
+     RowBox[{"While", "[", 
+      RowBox[{
+       RowBox[{"count", "!=", " ", "0"}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"a", ",", "b"}], "}"}], " ", "=", " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"a", "+", "b"}], ",", " ", "a"}], "}"}]}], ";", " ", 
+        RowBox[{"count", "--"}]}]}], "]"}], ";", " ", "b"}]}], "]"}], 
+  " "}]], "Input",
+ CellChangeTimes->{{3.4868254422598*^9, 3.486825597676*^9}, {
+  3.486825968451891*^9, 3.486826052378291*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"fib", "[", "12", "]"}]], "Input",
+ CellChangeTimes->{{3.486825572666602*^9, 3.48682557794676*^9}}],
+
+Cell[BoxData["144"], "Output",
+ CellChangeTimes->{{3.486825574108094*^9, 3.486825601985764*^9}, {
+   3.486826017693158*^9, 3.486826057731689*^9}, 3.486908827388012*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"fib", "::", "\"\<usage\>\""}], " ", "=", " ", 
+  "\"\<fib[n] returns the nth Fibonacci number.\>\""}]], "Input",
+ CellChangeTimes->{{3.486825610217914*^9, 3.486825626144074*^9}}],
+
+Cell[BoxData["\<\"fib[n] returns the nth Fibonacci number.\"\>"], "Output",
+ CellChangeTimes->{3.486825626807784*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"countEuclid", "[", 
+   RowBox[{"a_Integer", ",", "b_Integer"}], "]"}], " ", ":=", " ", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"x", " ", "=", "a"}], ",", 
+      RowBox[{"y", " ", "=", "b"}], ",", " ", 
+      RowBox[{"count", "=", "0"}]}], "}"}], ",", " ", 
+    RowBox[{
+     RowBox[{"While", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"x", "\[NotEqual]", "0"}], " ", "&&", " ", 
+        RowBox[{"y", "\[NotEqual]", "0"}]}], ",", " ", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"x", ",", "y"}], "}"}], " ", "=", " ", 
+         RowBox[{"{", 
+          RowBox[{"y", ",", " ", 
+           RowBox[{"Mod", "[", 
+            RowBox[{"x", ",", "y"}], "]"}]}], "}"}]}], ";", " ", 
+        RowBox[{"count", "++"}], ";"}]}], "]"}], ";", " ", "count"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.48682573229807*^9, 3.486825744289225*^9}, 
+   3.486825815918233*^9, {3.486909716648093*^9, 3.4869097177339573`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"countEuclid", "[", 
+  RowBox[{
+   RowBox[{"fib", "[", "2", "]"}], ",", " ", 
+   RowBox[{"fib", "[", "1", "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.486825746238399*^9, 3.486825755702332*^9}, {
+  3.486825837328891*^9, 3.4868258407600107`*^9}, {3.486909721933214*^9, 
+  3.486909722859144*^9}}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{{3.4868257593356752`*^9, 3.486825786747177*^9}, {
+   3.486825818753806*^9, 3.4868258427067966`*^9}, 3.486826060756003*^9, 
+   3.486908831144397*^9, 3.486909724716566*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"countEuclid", "[", 
+  RowBox[{
+   RowBox[{"fib", "[", "3", "]"}], ",", " ", 
+   RowBox[{"fib", "[", "2", "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.486825760453507*^9, 3.486825772853002*^9}, {
+  3.486909726476853*^9, 3.486909727402754*^9}}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{{3.486825767470706*^9, 3.4868257882492237`*^9}, 
+   3.486825820188115*^9, 3.486826062124968*^9, 3.486908832865328*^9, 
+   3.486909728823205*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"countEuclid", "[", 
+  RowBox[{
+   RowBox[{"fib", "[", "9", "]"}], ",", 
+   RowBox[{"fib", "[", "8", "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.4869096880029097`*^9, 3.4869097313488083`*^9}}],
+
+Cell[BoxData["7"], "Output",
+ CellChangeTimes->{3.486909701266246*^9, 3.486909733050365*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"countEuclid", "[", 
+  RowBox[{
+   RowBox[{"fib", "[", "10", "]"}], ",", " ", 
+   RowBox[{"fib", "[", "9", "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.4868257758883133`*^9, 3.48682580353872*^9}, {
+  3.486909734740321*^9, 3.486909735618087*^9}}],
+
+Cell[BoxData["8"], "Output",
+ CellChangeTimes->{{3.4868258039181623`*^9, 3.486825821689838*^9}, 
+   3.486826064633121*^9, 3.486908834119749*^9, 3.486909736974886*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"countEuclid", "[", 
+  RowBox[{
+   RowBox[{"fib", "[", "100", "]"}], ",", " ", 
+   RowBox[{"fib", "[", "99", "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.486825868945413*^9, 3.486825942960359*^9}, {
+  3.4869097389558992`*^9, 3.486909739865971*^9}}],
+
+Cell[BoxData["98"], "Output",
+ CellChangeTimes->{3.4868259438793087`*^9, 3.486826066968486*^9, 
+  3.486908836772853*^9, 3.4869097413183937`*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ "Theorem: if Euclid's algorithm takes k steps to terminate on integers u and \
+v with u > v > 0, then v must be greater than or equal to the k+1 th \
+Fibonacci number.\n\nProof:\n\nLemma: if ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    SubscriptBox["a", 
+     RowBox[{"k", "+", "1"}]]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", 
+    RowBox[{"k", "+", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ") \[RightArrow] (",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "k"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", "k"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ") \[RightArrow] ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    SubscriptBox["a", 
+     RowBox[{"k", "-", "1"}]]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", 
+    RowBox[{"k", "-", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ") are three successive pairs in the reduction process, then  ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", 
+    RowBox[{"k", "=", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " \[GreaterEqual] ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", "k"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " + ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", 
+    RowBox[{"k", "-", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". \n\nProof of Lemma:\nTo verify the claim, consider that a reduction step \
+is defined by applying the transformation ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", 
+    RowBox[{"k", "-", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " = ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", "k"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", 
+    RowBox[{"k", "-", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " = remainder of ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "k"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " divided by ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", "k"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". The second equation means that ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "k"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " = ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["qb", "k"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " + ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", 
+    RowBox[{"k", "-", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " for some positive integer q. And since q must be at least 1 we have ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "k"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " = ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["qb", "k"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " + ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", 
+    RowBox[{"k", "-", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " \[GreaterEqual] ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", "k"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " + ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", 
+    RowBox[{"k", "-", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". But in the previous reduction step we have ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", 
+    RowBox[{"k", "-", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " = ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "k"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". Therefore, ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", 
+    RowBox[{"k", "+", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " = ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["a", "k"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " \[GreaterEqual] ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", "k"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " + ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", 
+    RowBox[{"k", "-", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ".\n\nProof of Theorem:\nWe can prove the theorem by induction on k, the \
+number of steps that the algorithm requires to terminate. The result is true \
+for k = 1, since this merely requires that v be at least as large as Fib(2) = \
+1. Now, assume that the result is true for all integers less than or equal to \
+k and establish the result for k + 1. \nLet ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    SubscriptBox["a", 
+     RowBox[{"k", "+", "1"}]]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", 
+    RowBox[{"k", "+", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ") \[RightArrow] ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    SubscriptBox["a", "k"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", "k"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ") \[RightArrow] ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    SubscriptBox["a", 
+     RowBox[{"k", "-", "1"}]]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", 
+    RowBox[{"k", "-", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ") be successive pairs in the reduction process. By the inductive \
+hypotheses, we have ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", 
+    RowBox[{"k", "-", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " \[GreaterEqual] Fib(k) and ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", "k"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " \[GreaterEqual] Fib(k+1). Thus, applying the claim we just proved together \
+with the definition of the Fibonacci numbers gives ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", 
+    RowBox[{"k", "+", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " \[GreaterEqual] ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", "k"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " + ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["b", 
+    RowBox[{"k", "-", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " \[GreaterEqual] Fib(k+1) + Fib(k) = Fib(k+2)."
+}], "Text",
+ CellChangeTimes->{{3.486908932400999*^9, 3.486909072770233*^9}, {
+  3.486909114960512*^9, 3.486909137903225*^9}, {3.486909269674963*^9, 
+  3.486909384242889*^9}, {3.4869094323386097`*^9, 3.486909524334055*^9}, {
+  3.4869095873247137`*^9, 3.486909600700543*^9}, {3.486909634295121*^9, 
+  3.486909670318581*^9}, {3.486909751467334*^9, 3.4869098724474697`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"countEuclid", "::", "\"\<usage\>\""}], " ", "=", " ", 
+  "\"\<countEuclid[a,b] counts the number of iterations required for Euclid's \
+algorithm to terminate when applied to a an b.\>\""}]], "Input",
+ CellChangeTimes->{{3.486909879213191*^9, 3.486909911302011*^9}}],
+
+Cell[BoxData["\<\"countEuclid[a,b] counts the number of iterations required \
+for Euclid's algorithm to terminate when applied to a an b.\"\>"], "Output",
+ CellChangeTimes->{{3.486909904413389*^9, 3.4869099136670017`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"order", "[", 
+   RowBox[{"a_Integer", ",", " ", "b_Integer"}], "]"}], " ", ":=", " ", 
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"GCD", "[", 
+      RowBox[{"a", ",", "b"}], "]"}], " ", "\[NotEqual]", " ", "1"}], ",", 
+    " ", "Infinity", ",", " ", 
+    RowBox[{"First", "[", 
+     RowBox[{"Select", "[", " ", 
+      RowBox[{
+       RowBox[{"Divisors", "[", 
+        RowBox[{"EulerPhi", "[", "b", "]"}], "]"}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Mod", "[", 
+          RowBox[{
+           RowBox[{"a", "^", "#"}], ",", " ", "b"}], "]"}], " ", "\[Equal]", 
+         "1"}], "&"}], ",", "1"}], "]"}], "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.48690997238454*^9, 3.486909991462706*^9}, {
+  3.486910112535153*^9, 3.486910123957292*^9}, {3.4869101583883*^9, 
+  3.486910188793347*^9}, {3.486910228990725*^9, 3.4869103027605877`*^9}, {
+  3.4869103874281263`*^9, 3.486910405321862*^9}, {3.486910436527995*^9, 
+  3.486910560940947*^9}, {3.486910606114779*^9, 3.4869106172498293`*^9}, {
+  3.486910670150833*^9, 3.48691068930052*^9}, {3.486910739450741*^9, 
+  3.4869107591591263`*^9}}],
+
+Cell[BoxData[""], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"order", "[", 
+    RowBox[{"a", ",", "7"}], "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "0", ",", "6"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.486910190038286*^9, 3.486910237604011*^9}, {
+  3.486910306127472*^9, 3.4869103095425577`*^9}, {3.486910517397079*^9, 
+  3.48691051793225*^9}, {3.486910627769703*^9, 3.4869106575650187`*^9}, {
+  3.486910724553322*^9, 3.4869107634524603`*^9}, {3.4869108118344393`*^9, 
+  3.4869108500668716`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "\[Infinity]", ",", "1", ",", "3", ",", "6", ",", "3", ",", "6", ",", "2"}],
+   "}"}]], "Output",
+ CellChangeTimes->{{3.486910221570962*^9, 3.486910238021813*^9}, {
+   3.486910269040402*^9, 3.486910272247998*^9}, 3.486910309948271*^9, {
+   3.486910448222801*^9, 3.486910482248767*^9}, {3.4869105182282143`*^9, 
+   3.4869105542418947`*^9}, 3.48691062002092*^9, 3.486910658365487*^9, 
+   3.486910692081379*^9, {3.486910726674993*^9, 3.4869107648433323`*^9}, {
+   3.48691082198742*^9, 3.486910850584001*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"order", "[", 
+    RowBox[{"a", ",", "19"}], "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "0", ",", "18"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.4869108528419237`*^9, 3.486910864281826*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "\[Infinity]", ",", "1", ",", "18", ",", "18", ",", "9", ",", "9", ",", "9",
+    ",", "3", ",", "6", ",", "9", ",", "18", ",", "3", ",", "6", ",", "18", 
+   ",", "18", ",", "18", ",", "9", ",", "9", ",", "2"}], "}"}]], "Output",
+ CellChangeTimes->{3.486910864716445*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"order", "[", 
+    RowBox[{"a", ",", "42"}], "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", "0", ",", "41"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.486910865272493*^9, 3.486910875239518*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "\[Infinity]", ",", "1", ",", "\[Infinity]", ",", "\[Infinity]", ",", 
+   "\[Infinity]", ",", "6", ",", "\[Infinity]", ",", "\[Infinity]", ",", 
+   "\[Infinity]", ",", "\[Infinity]", ",", "\[Infinity]", ",", "6", ",", 
+   "\[Infinity]", ",", "2", ",", "\[Infinity]", ",", "\[Infinity]", ",", 
+   "\[Infinity]", ",", "6", ",", "\[Infinity]", ",", "6", ",", "\[Infinity]", 
+   ",", "\[Infinity]", ",", "\[Infinity]", ",", "6", ",", "\[Infinity]", ",", 
+   "3", ",", "\[Infinity]", ",", "\[Infinity]", ",", "\[Infinity]", ",", "2", 
+   ",", "\[Infinity]", ",", "6", ",", "\[Infinity]", ",", "\[Infinity]", ",", 
+   "\[Infinity]", ",", "\[Infinity]", ",", "\[Infinity]", ",", "3", ",", 
+   "\[Infinity]", ",", "\[Infinity]", ",", "\[Infinity]", ",", "2"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.486910877645108*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"order", "::", "\"\<usage\>\""}], " ", "=", " ", 
+  "\"\<order[a,b] returns the order of a modulo b; i.e. the smallest positive \
+k such that a^k = 1 mod b.\>\""}]], "Input",
+ CellChangeTimes->{{3.486910898858197*^9, 3.486910930241702*^9}}],
+
+Cell[BoxData["\<\"order[a,b] returns the order of a modulo b; i.e. the \
+smallest positive k such that a^k = 1 mod b.\"\>"], "Output",
+ CellChangeTimes->{3.486910930697569*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"genUnits", "[", "m_Integer", "]"}], " ", ":=", " ", 
+  RowBox[{"Select", "[", 
+   RowBox[{
+    RowBox[{"Range", "[", "m", "]"}], ",", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"GCD", "[", 
+       RowBox[{"m", ",", "#"}], "]"}], "\[Equal]", "1"}], "&"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.486910947096735*^9, 3.486911032177515*^9}, {
+  3.486911341723027*^9, 3.4869113423865833`*^9}, {3.486911492791196*^9, 
+  3.48691151366088*^9}, {3.4869115657790728`*^9, 3.4869115778154163`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"genUnits", "[", "7", "]"}]], "Input",
+ CellChangeTimes->{{3.486911034940977*^9, 3.48691104745537*^9}, 
+   3.4869111917167187`*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "2", ",", "3", ",", "4", ",", "5", ",", "6"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.4869112027372627`*^9, {3.486911516534102*^9, 3.48691151949111*^9}, 
+   3.486911581061105*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"genUnits", "[", "15", "]"}]], "Input",
+ CellChangeTimes->{{3.486911224328368*^9, 3.4869112376329603`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "2", ",", "4", ",", "7", ",", "8", ",", "11", ",", "13", ",", 
+   "14"}], "}"}]], "Output",
+ CellChangeTimes->{{3.486911227990734*^9, 3.486911238263719*^9}, 
+   3.4869115827125673`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"genUnits", "[", "18", "]"}]], "Input",
+ CellChangeTimes->{{3.4869112451776333`*^9, 3.486911252143743*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "5", ",", "7", ",", "11", ",", "13", ",", "17"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.4869112525448637`*^9, 3.48691158426654*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"genUnits", "[", "21", "]"}]], "Input",
+ CellChangeTimes->{{3.4869112528618317`*^9, 3.486911255535775*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "2", ",", "4", ",", "5", ",", "8", ",", "10", ",", "11", ",", 
+   "13", ",", "16", ",", "17", ",", "19", ",", "20"}], "}"}]], "Output",
+ CellChangeTimes->{3.48691125595297*^9, 3.486911585735753*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"genUnits", "[", "22", "]"}]], "Input",
+ CellChangeTimes->{{3.486911267541438*^9, 3.4869112860852537`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "3", ",", "5", ",", "7", ",", "9", ",", "13", ",", "15", ",", 
+   "17", ",", "19", ",", "21"}], "}"}]], "Output",
+ CellChangeTimes->{3.4869112866041403`*^9, 3.486911587122985*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"genUnits", "[", "23", "]"}]], "Input",
+ CellChangeTimes->{{3.486911286951605*^9, 3.486911290964898*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "2", ",", "3", ",", "4", ",", "5", ",", "6", ",", "7", ",", "8", 
+   ",", "9", ",", "10", ",", "11", ",", "12", ",", "13", ",", "14", ",", "15",
+    ",", "16", ",", "17", ",", "18", ",", "19", ",", "20", ",", "21", ",", 
+   "22"}], "}"}]], "Output",
+ CellChangeTimes->{3.486911292451675*^9, 3.4869115890765877`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"genUnits", "[", "25", "]"}]], "Input",
+ CellChangeTimes->{{3.486911294971669*^9, 3.486911297045794*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "2", ",", "3", ",", "4", ",", "6", ",", "7", ",", "8", ",", "9", 
+   ",", "11", ",", "12", ",", "13", ",", "14", ",", "16", ",", "17", ",", 
+   "18", ",", "19", ",", "21", ",", "22", ",", "23", ",", "24"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.486911297862257*^9, 3.48691159026295*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"genUnits", "::", "\"\<usage\>\""}], " ", "=", " ", 
+  "\"\<genunits[m] returns the list of numbers k between 1 and m for which \
+there exists an j such that jk is congruent to 1 modulo m.\>\""}]], "Input",
+ CellChangeTimes->{{3.4869113231149397`*^9, 3.486911347729615*^9}, {
+  3.486911422702338*^9, 3.486911424268249*^9}, {3.486911456859318*^9, 
+  3.486911458387047*^9}, {3.486911593959545*^9, 3.486911621437784*^9}}],
+
+Cell[BoxData["\<\"genunits[m] returns the list of numbers k between 1 and m \
+for which there exists an j such that jk is congruent to 1 modulo m.\"\>"], \
+"Output",
+ CellChangeTimes->{3.486911621850462*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"EulerPhi", "[", "10", "]"}]], "Input",
+ CellChangeTimes->{{3.486911949210321*^9, 3.486911951907358*^9}}],
+
+Cell[BoxData["4"], "Output",
+ CellChangeTimes->{3.486911952318363*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"lastDigit", "[", 
+   RowBox[{"a_Integer", ",", " ", "b_Integer"}], "]"}], " ", ":=", " ", 
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"GCD", "[", 
+      RowBox[{"a", ",", "10"}], "]"}], " ", "\[Equal]", " ", "1"}], ",", " ", 
+    
+    RowBox[{"Mod", "[", 
+     RowBox[{
+      RowBox[{"a", "^", 
+       RowBox[{"(", 
+        RowBox[{"Mod", "[", 
+         RowBox[{"b", ",", "4"}], "]"}], ")"}]}], ",", " ", "10"}], "]"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.4869116312171164`*^9, 3.486911659267392*^9}, {
+  3.486911716087364*^9, 3.486911840533492*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"lastDigit", "[", 
+  RowBox[{"9", ",", "9999"}], "]"}]], "Input",
+ CellChangeTimes->{{3.486911841851831*^9, 3.486911845811316*^9}, {
+  3.486911888184702*^9, 3.48691191412642*^9}}],
+
+Cell[BoxData["9"], "Output",
+ CellChangeTimes->{3.4869118462158012`*^9, 3.486911914600651*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"lastDigit", "[", 
+  RowBox[{"7", ",", "7777"}], "]"}]], "Input",
+ CellChangeTimes->{{3.486912002776359*^9, 3.4869120162224073`*^9}}],
+
+Cell[BoxData["7"], "Output",
+ CellChangeTimes->{{3.486912007608437*^9, 3.486912017683304*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mod", "[", 
+  RowBox[{
+   RowBox[{"9", "^", "9999"}], ",", "10"}], "]"}]], "Input",
+ CellChangeTimes->{{3.4869118468299828`*^9, 3.486911851027295*^9}, {
+  3.4869118920486183`*^9, 3.4869119378687687`*^9}}],
+
+Cell[BoxData["9"], "Output",
+ CellChangeTimes->{
+  3.486911851443059*^9, {3.486911897595508*^9, 3.486911938670904*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mod", "[", 
+  RowBox[{
+   RowBox[{"7", "^", "7777"}], ",", "10"}], "]"}]], "Input",
+ CellChangeTimes->{{3.4869119401375093`*^9, 3.486911945811767*^9}}],
+
+Cell[BoxData["7"], "Output",
+ CellChangeTimes->{3.486911946254381*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"lastDigit", "::", "\"\<usage\>\""}], " ", "=", " ", 
+  "\"\<lastdigit[a,b] returns the last digit of a^b for any positive integer \
+a which is relatively prime to 10.\>\""}]], "Input",
+ CellChangeTimes->{{3.4869120297703943`*^9, 3.486912061196376*^9}}],
+
+Cell[BoxData["\<\"lastdigit[a,b] returns the last digit of a^b for any \
+positive integer a which is relatively prime to 10.\"\>"], "Output",
+ CellChangeTimes->{3.4869120616111393`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"EulerPhi", "[", "100", "]"}]], "Input",
+ CellChangeTimes->{{3.48691210864849*^9, 3.486912111903138*^9}}],
+
+Cell[BoxData["40"], "Output",
+ CellChangeTimes->{3.48691211230729*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"lastTwoDigits", "[", 
+   RowBox[{"a_Integer", ",", "b_Integer"}], "]"}], " ", ":=", " ", 
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"GCD", "[", 
+      RowBox[{"a", ",", "10"}], "]"}], " ", "\[Equal]", " ", "1"}], ",", " ", 
+    
+    RowBox[{"Mod", "[", 
+     RowBox[{
+      RowBox[{"a", "^", 
+       RowBox[{"(", 
+        RowBox[{"Mod", "[", 
+         RowBox[{"b", ",", "40"}], "]"}], ")"}]}], ",", "100"}], "]"}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.486912072952043*^9, 3.486912076617752*^9}, {
+  3.4869121142407913`*^9, 3.486912148326326*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"lastTwoDigits", "[", 
+  RowBox[{"17", ",", "10000"}], "]"}]], "Input",
+ CellChangeTimes->{{3.48691214980663*^9, 3.486912158475893*^9}}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.486912173878293*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"lastTwoDigits", "[", 
+  RowBox[{"7", ",", "77777"}], "]"}]], "Input",
+ CellChangeTimes->{{3.4869121905308723`*^9, 3.486912197225233*^9}}],
+
+Cell[BoxData["7"], "Output",
+ CellChangeTimes->{3.48691219761485*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"lastTwoDigits", "[", 
+  RowBox[{"9", ",", "99999"}], "]"}]], "Input",
+ CellChangeTimes->{{3.4869121979972477`*^9, 3.486912214695857*^9}}],
+
+Cell[BoxData["89"], "Output",
+ CellChangeTimes->{{3.4869122043220167`*^9, 3.4869122161220407`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"lastTwoDigits", "::", "\"\<usage\>\""}], " ", "=", " ", 
+  "\"\<lastTwoDigits[a,b] returns a^b mod 100 for any positive integer a \
+relatively prime to 10.\>\""}]], "Input",
+ CellChangeTimes->{{3.486912228163642*^9, 3.486912256237802*^9}}],
+
+Cell[BoxData["\<\"lastTwoDigits[a,b] returns a^b mod 100 for any positive \
+integer a relatively prime to 10.\"\>"], "Output",
+ CellChangeTimes->{3.486912256645116*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"nu", "[", 
+   RowBox[{"n_Integer", "?", "Positive"}], "]"}], " ", ":=", " ", 
+  RowBox[{"Length", "[", 
+   RowBox[{"FactorInteger", "[", "n", "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.486912327501875*^9, 3.486912355855554*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"mu", "[", 
+   RowBox[{"n_Integer", "?", "Positive"}], "]"}], " ", ":=", " ", 
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{"n", " ", "\[Equal]", "1"}], ",", " ", "1", ",", 
+    RowBox[{"If", " ", "[", 
+     RowBox[{
+      RowBox[{"Fold", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"#1", " ", "||", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"#2", "[", 
+             RowBox[{"[", "2", "]"}], "]"}], " ", "\[GreaterEqual]", "2"}], 
+           ")"}]}], "&"}], ",", "False", ",", " ", 
+        RowBox[{"FactorInteger", "[", "n", "]"}]}], "]"}], ",", " ", "0", ",", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"-", "1"}], ")"}], "^", 
+       RowBox[{"nu", "[", "n", "]"}]}]}], "]"}]}], "]"}]}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"sumdmu", "[", 
+   RowBox[{"n_Integer", "?", "Positive"}], "]"}], ":=", " ", 
+  RowBox[{"Plus", " ", "@@", " ", 
+   RowBox[{"Map", "[", 
+    RowBox[{"mu", ",", " ", 
+     RowBox[{"Divisors", "[", "n", "]"}]}], "]"}]}]}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"sumdmu", "::", "\"\<usage\>\""}], "=", 
+  "\"\<sumdmu[n] returns the sum of the numbers mu(d) for each divisor d of \
+n.\>\""}]], "Input"],
+
+Cell[BoxData["\<\"sumdmu[n] returns the sum of the numbers mu(d) for each \
+divisor d of n.\"\>"], "Output",
+ CellChangeTimes->{3.48691238599981*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"mu", "::", "\"\<usage\>\""}], "=", " ", 
+  "\"\<mu[n] returns 0 if n has a factor that is a perfect square, 1 if n is \
+1, and (-1)^nu(n) otherwise.\>\""}]], "Input"],
+
+Cell[BoxData["\<\"mu[n] returns 0 if n has a factor that is a perfect square, \
+1 if n is 1, and (-1)^nu(n) otherwise.\"\>"], "Output",
+ CellChangeTimes->{3.486912391277717*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"nu", "::", "\"\<usage\>\""}], " ", "=", " ", 
+  "\"\<nu[n] returns the number of distinct prime factors of n\>\""}]], \
+"Input"],
+
+Cell[BoxData["\<\"nu[n] returns the number of distinct prime factors of \
+n\"\>"], "Output",
+ CellChangeTimes->{3.486912398243271*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"totient", "[", 
+   RowBox[{"n_Integer", "?", "Positive"}], "]"}], " ", ":=", " ", 
+  RowBox[{"Plus", "@@", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"sumdmu", "[", 
+      RowBox[{"GCD", "[", 
+       RowBox[{"i", ",", "n"}], "]"}], "]"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "n"}], "}"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.48699528333365*^9, 3.486995351238015*^9}, 
+   3.48699538482918*^9, {3.4869954565505323`*^9, 3.486995478372954*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"totient", "[", "69", "]"}]], "Input",
+ CellChangeTimes->{{3.486995483697373*^9, 3.486995486450979*^9}}],
+
+Cell[BoxData["44"], "Output",
+ CellChangeTimes->{3.48699548683875*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"EulerPhi", "[", "69", "]"}]], "Input",
+ CellChangeTimes->{{3.486995487405724*^9, 3.486995489538666*^9}}],
+
+Cell[BoxData["44"], "Output",
+ CellChangeTimes->{3.486995489912146*^9}]
+}, Open  ]],
+
+Cell["\<\
+sumdmu returns 1 if its argument is 1 and 0 if its argument is greater than \
+1.  So 1 is added to the total iff gcd(i,n) is 1; i.e if i and n are \
+relatively prime.  This means that the total is 1 * (numner of integers \
+between 1 and n that are relatively prime to n).\
+\>", "Text",
+ CellChangeTimes->{{3.486995499210607*^9, 3.486995600969091*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"totient", "::", "\"\<usage\>\""}], " ", "=", " ", 
+  "\"\<totient[n] returns the number of positive integers less than or equal \
+to n that are relatively prime to n.\>\""}]], "Input",
+ CellChangeTimes->{{3.486995621795384*^9, 3.486995653452024*^9}}],
+
+Cell[BoxData["\<\"totient[n] returns the number of positive integers less \
+than or equal to n that are relatively prime to n.\"\>"], "Output",
+ CellChangeTimes->{3.486995654061955*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"totient2", "[", 
+   RowBox[{"n_Integer", "?", "Positive"}], "]"}], " ", ":=", " ", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"facList", " ", "=", " ", 
+      RowBox[{"FactorInteger", "[", "n", "]"}]}], "}"}], ",", " ", 
+    RowBox[{"n", " ", 
+     RowBox[{"Times", "@@", 
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"1", "-", 
+         RowBox[{"1", "/", 
+          RowBox[{"facList", "[", 
+           RowBox[{"[", 
+            RowBox[{"i", ",", "1"}], "]"}], "]"}]}]}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", 
+          RowBox[{"Length", "[", "facList", "]"}]}], "}"}]}], "]"}]}]}]}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.486995604318329*^9, 3.486995619905748*^9}, {
+  3.486995672551112*^9, 3.4869957121009007`*^9}, {3.486995754835208*^9, 
+  3.486995755185382*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"totient2", "::", "\"\<usage\>\""}], " ", "=", " ", 
+  "\"\<totient2[n] returns the number of positive integers less than or equal \
+to n that are relatively prime to n.\>\""}]], "Input",
+ CellChangeTimes->{{3.486995444607346*^9, 3.486995447437455*^9}, {
+  3.48699566607086*^9, 3.486995668439097*^9}}],
+
+Cell[BoxData["\<\"totient2[n] returns the number of positive integers less \
+than or equal to n that are relatively prime to n.\"\>"], "Output",
+ CellChangeTimes->{3.486995669930419*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"totient2", "[", "69", "]"}]], "Input",
+ CellChangeTimes->{{3.4869957244411173`*^9, 3.486995730640818*^9}}],
+
+Cell[BoxData["44"], "Output",
+ CellChangeTimes->{{3.4869957310167723`*^9, 3.486995758594174*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ "totient2[n] multiplies n by ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    UnderoverscriptBox[
+     RowBox[{"\[Product]", " "}], 
+     RowBox[{"p", " ", "is", " ", "prime"}], "n"], 
+    RowBox[{"(", 
+     RowBox[{"1", "-", 
+      RowBox[{"1", "/", "p"}]}], ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ".  The probability that a number less than or equal to n is not divisible \
+by a prime p is exactly (1-1/p).   Using the multiplicative rule for \
+probabilty gives the product above."
+}], "Text",
+ CellChangeTimes->{{3.48699576072141*^9, 3.486995888635659*^9}, {
+  3.4869959703750772`*^9, 3.486996085917441*^9}, {3.4869961619539022`*^9, 
+  3.486996180510363*^9}, {3.486996232893261*^9, 3.4869962523770323`*^9}}]
+},
+WindowSize->{640, 750},
+WindowMargins->{{374, Automatic}, {Automatic, 105}},
+FrontEndVersion->"7.0 for Mac OS X x86 (32-bit) (February 18, 2009)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[545, 20, 735, 19, 58, "Input"],
+Cell[CellGroupData[{
+Cell[1305, 43, 163, 3, 27, "Input"],
+Cell[1471, 48, 255, 6, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1763, 59, 247, 5, 27, "Input"],
+Cell[2013, 66, 204, 5, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2254, 76, 278, 8, 27, "Input"],
+Cell[2535, 86, 204, 5, 27, "Output"]
+}, Open  ]],
+Cell[2754, 94, 268, 5, 58, "Input"],
+Cell[3025, 101, 181, 2, 43, "Input"],
+Cell[3209, 105, 807, 24, 43, "Input"],
+Cell[CellGroupData[{
+Cell[4041, 133, 122, 2, 27, "Input"],
+Cell[4166, 137, 168, 2, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4371, 144, 213, 4, 27, "Input"],
+Cell[4587, 150, 117, 1, 27, "Output"]
+}, Open  ]],
+Cell[4719, 154, 1027, 28, 58, "Input"],
+Cell[CellGroupData[{
+Cell[5771, 186, 320, 7, 27, "Input"],
+Cell[6094, 195, 218, 3, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6349, 203, 269, 6, 27, "Input"],
+Cell[6621, 211, 192, 3, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6850, 219, 219, 5, 27, "Input"],
+Cell[7072, 226, 92, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7201, 232, 271, 6, 27, "Input"],
+Cell[7475, 240, 166, 2, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7678, 247, 274, 6, 27, "Input"],
+Cell[7955, 255, 144, 2, 27, "Output"]
+}, Open  ]],
+Cell[8114, 260, 6736, 237, 354, "Text"],
+Cell[CellGroupData[{
+Cell[14875, 501, 300, 5, 58, "Input"],
+Cell[15178, 508, 222, 2, 43, "Output"]
+}, Open  ]],
+Cell[15415, 513, 1155, 27, 58, "Input"],
+Cell[16573, 542, 26, 0, 27, "Input"],
+Cell[CellGroupData[{
+Cell[16624, 546, 520, 11, 27, "Input"],
+Cell[17147, 559, 547, 10, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17731, 574, 273, 7, 27, "Input"],
+Cell[18007, 583, 312, 6, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18356, 594, 271, 7, 27, "Input"],
+Cell[18630, 603, 857, 14, 43, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19524, 622, 274, 5, 58, "Input"],
+Cell[19801, 629, 176, 2, 43, "Output"]
+}, Open  ]],
+Cell[19992, 634, 533, 13, 27, "Input"],
+Cell[CellGroupData[{
+Cell[20550, 651, 154, 3, 27, "Input"],
+Cell[20707, 656, 234, 6, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20978, 667, 130, 2, 27, "Input"],
+Cell[21111, 671, 237, 6, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21385, 682, 130, 2, 27, "Input"],
+Cell[21518, 686, 184, 4, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21739, 695, 130, 2, 27, "Input"],
+Cell[21872, 699, 250, 5, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22159, 709, 130, 2, 27, "Input"],
+Cell[22292, 713, 231, 5, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22560, 723, 128, 2, 27, "Input"],
+Cell[22691, 727, 367, 7, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23095, 739, 128, 2, 27, "Input"],
+Cell[23226, 743, 342, 7, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23605, 755, 452, 7, 58, "Input"],
+Cell[24060, 764, 207, 3, 43, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24304, 772, 128, 2, 27, "Input"],
+Cell[24435, 776, 70, 1, 27, "Output"]
+}, Open  ]],
+Cell[24520, 780, 613, 18, 43, "Input"],
+Cell[CellGroupData[{
+Cell[25158, 802, 202, 4, 27, "Input"],
+Cell[25363, 808, 94, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25494, 814, 156, 3, 27, "Input"],
+Cell[25653, 819, 94, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25784, 825, 228, 5, 27, "Input"],
+Cell[26015, 832, 119, 2, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26171, 839, 175, 4, 27, "Input"],
+Cell[26349, 845, 70, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26456, 851, 287, 5, 58, "Input"],
+Cell[26746, 858, 185, 2, 43, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26968, 865, 128, 2, 27, "Input"],
+Cell[27099, 869, 70, 1, 27, "Output"]
+}, Open  ]],
+Cell[27184, 873, 609, 18, 43, "Input"],
+Cell[CellGroupData[{
+Cell[27818, 895, 159, 3, 27, "Input"],
+Cell[27980, 900, 70, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28087, 906, 161, 3, 27, "Input"],
+Cell[28251, 911, 69, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28357, 917, 161, 3, 27, "Input"],
+Cell[28521, 922, 99, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28657, 928, 274, 5, 58, "Input"],
+Cell[28934, 935, 168, 2, 43, "Output"]
+}, Open  ]],
+Cell[29117, 940, 268, 6, 27, "Input"],
+Cell[29388, 948, 784, 22, 58, "Input"],
+Cell[30175, 972, 264, 7, 27, "Input"],
+Cell[CellGroupData[{
+Cell[30464, 983, 173, 4, 58, "Input"],
+Cell[30640, 989, 149, 2, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30826, 996, 201, 4, 58, "Input"],
+Cell[31030, 1002, 177, 2, 43, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31244, 1009, 163, 4, 27, "Input"],
+Cell[31410, 1015, 134, 2, 27, "Output"]
+}, Open  ]],
+Cell[31559, 1020, 512, 13, 27, "Input"],
+Cell[CellGroupData[{
+Cell[32096, 1037, 127, 2, 27, "Input"],
+Cell[32226, 1041, 70, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32333, 1047, 128, 2, 27, "Input"],
+Cell[32464, 1051, 71, 1, 27, "Output"]
+}, Open  ]],
+Cell[32550, 1055, 361, 6, 56, "Text"],
+Cell[CellGroupData[{
+Cell[32936, 1065, 285, 5, 58, "Input"],
+Cell[33224, 1072, 185, 2, 43, "Output"]
+}, Open  ]],
+Cell[33424, 1077, 874, 24, 58, "Input"],
+Cell[CellGroupData[{
+Cell[34323, 1105, 335, 6, 58, "Input"],
+Cell[34661, 1113, 186, 2, 43, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34884, 1120, 130, 2, 27, "Input"],
+Cell[35017, 1124, 97, 1, 27, "Output"]
+}, Open  ]],
+Cell[35129, 1128, 747, 18, 62, "Text"]
+}
+]
+*)
+
+(* End of internal cache information *)

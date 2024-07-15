@@ -1,0 +1,2642 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     92178,       2633]
+NotebookOptionsPosition[     86619,       2440]
+NotebookOutlinePosition[     87603,       2474]
+CellTagsIndexPosition[     87391,       2466]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"?", "D*"}]], "Input",
+ CellChangeTimes->{{3.486132257348681*^9, 3.486132261068231*^9}}],
+
+Cell[BoxData[
+ DynamicModuleBox[{Typeset`open$$ = True}, 
+  PaneSelectorBox[{False->
+   RowBox[{
+    OpenerBox[Dynamic[Typeset`open$$],
+     ImageSize->Small], 
+    StyleBox["System`", "InfoHeading"]}], True->GridBox[{
+     {
+      RowBox[{
+       OpenerBox[Dynamic[Typeset`open$$],
+        ImageSize->Small], 
+       StyleBox["System`", "InfoHeading"]}]},
+     {GridBox[{
+        {
+         ButtonBox["D",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"D", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DiracComb",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DiracComb", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DamerauLevenshteinDistance",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {
+            "DamerauLevenshteinDistance", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DiracDelta",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DiracDelta", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DampingFactor",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DampingFactor", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DirectedEdges",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DirectedEdges", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Darker",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Darker", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DirectedInfinity",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DirectedInfinity", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Dashed",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Dashed", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["Direction",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Direction", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Dashing",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Dashing", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["Directive",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Directive", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DataRange",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DataRange", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["Directory",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Directory", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DataReversed",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DataReversed", "System`"}},
+          
+          ButtonNote->"System`"], 
+         ButtonBox["DirectoryName",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DirectoryName", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Date",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Date", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DirectoryQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DirectoryQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DateDelimiters",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DateDelimiters", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DirectoryStack",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DirectoryStack", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DateDifference",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DateDifference", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DirichletCharacter",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DirichletCharacter", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DateFunction",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DateFunction", "System`"}},
+          
+          ButtonNote->"System`"], 
+         ButtonBox["DirichletConvolve",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DirichletConvolve", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DateList",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DateList", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DirichletL",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DirichletL", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DateListLogPlot",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DateListLogPlot", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DirichletTransform",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DirichletTransform", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DateListPlot",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DateListPlot", "System`"}},
+          
+          ButtonNote->"System`"], 
+         ButtonBox["DisableConsolePrintPacket",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DisableConsolePrintPacket", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DatePattern",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DatePattern", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DiscreteConvolve",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DiscreteConvolve", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DatePlus",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DatePlus", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DiscreteDelta",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DiscreteDelta", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DateString",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DateString", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DiscreteIndicator",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DiscreteIndicator", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DateTicksFormat",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DateTicksFormat", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DiscretePlot",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DiscretePlot", "System`"}},
+          
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DawsonF",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DawsonF", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DiscreteRatio",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DiscreteRatio", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Debug",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Debug", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DiscreteShift",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DiscreteShift", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DebugTag",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DebugTag", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DiscreteUniformDistribution",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {
+            "DiscreteUniformDistribution", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Decimal",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Decimal", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["Discriminant",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Discriminant", "System`"}},
+          
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DeclareKnownSymbols",
+          BaseStyle->"InformationLink",
+          ButtonData:>{
+           "Info3486114263-8286375", {"DeclareKnownSymbols", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["Disjunction",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Disjunction", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DeclarePackage",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DeclarePackage", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["Disk",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Disk", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Decompose",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Decompose", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DiskBox",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DiskBox", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Decrement",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Decrement", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DiskMatrix",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DiskMatrix", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DedekindEta",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DedekindEta", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["Dispatch",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Dispatch", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Default",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Default", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DispersionEstimatorFunction",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {
+            "DispersionEstimatorFunction", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultAxesStyle",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefaultAxesStyle", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["Display",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Display", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultBaseStyle",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefaultBaseStyle", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DisplayAllSteps",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DisplayAllSteps", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultBoxStyle",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefaultBoxStyle", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DisplayEndPacket",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DisplayEndPacket", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultButton",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DefaultButton", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DisplayFlushImagePacket",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DisplayFlushImagePacket", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultColor",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DefaultColor", "System`"}},
+          
+          ButtonNote->"System`"], 
+         ButtonBox["DisplayForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DisplayForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultControlPlacement",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefaultControlPlacement", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DisplayFunction",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DisplayFunction", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultDuplicateCellStyle",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefaultDuplicateCellStyle", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DisplayPacket",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DisplayPacket", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultDuration",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefaultDuration", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DisplayRules",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DisplayRules", "System`"}},
+          
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultElement",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefaultElement", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DisplaySetSizePacket",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DisplaySetSizePacket", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultFont",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DefaultFont", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DisplayString",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DisplayString", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultFontProperties",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefaultFontProperties", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DisplayTemporary",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DisplayTemporary", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultFormatType",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefaultFormatType", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DistanceFunction",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DistanceFunction", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultFormatTypeForStyle",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefaultFormatTypeForStyle", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DistanceTransform",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DistanceTransform", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultFrameStyle",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefaultFrameStyle", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["Distribute",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Distribute", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultInlineFormatType",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefaultInlineFormatType", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DistributeDefinitions",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DistributeDefinitions", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultInputFormatType",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefaultInputFormatType", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DistributionDomain",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DistributionDomain", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultLabelStyle",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefaultLabelStyle", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DistributionDomainQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DistributionDomainQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultNaturalLanguage",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefaultNaturalLanguage", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DistributionParameterQ",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DistributionParameterQ", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultNewCellStyle",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefaultNewCellStyle", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["Dithering",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Dithering", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultNewInlineCellStyle",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefaultNewInlineCellStyle", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["Divide",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Divide", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultNotebook",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefaultNotebook", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DivideBy",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DivideBy", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultOptions",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefaultOptions", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["Dividers",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Dividers", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultOutputFormatType",
+          BaseStyle->"InformationLink",
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefaultOutputFormatType", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["Divisible",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Divisible", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultStyle",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DefaultStyle", "System`"}},
+          
+          ButtonNote->"System`"], 
+         ButtonBox["Divisors",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Divisors", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultStyleDefinitions",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefaultStyleDefinitions", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DivisorSigma",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DivisorSigma", "System`"}},
+          
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultTextFormatType",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefaultTextFormatType", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DivisorSum",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DivisorSum", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultTextInlineFormatType",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {
+            "DefaultTextInlineFormatType", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DMSList",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DMSList", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultValues",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DefaultValues", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DMSString",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DMSString", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Defer",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Defer", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["Do",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Do", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefineExternal",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DefineExternal", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DockedCells",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DockedCells", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Definition",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Definition", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DocumentNotebook",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DocumentNotebook", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Degree",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Degree", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DOSTextFormat",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DOSTextFormat", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DegreeLexicographic",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DegreeLexicographic", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["Dot",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Dot", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DegreeReverseLexicographic",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {
+            "DegreeReverseLexicographic", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DotDashed",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DotDashed", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Deinitialization",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"Deinitialization", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DotEqual",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DotEqual", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Del",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Del", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["Dotted",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Dotted", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Deletable",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Deletable", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DoubleBracketingBar",
+          BaseStyle->"InformationLink",
+          ButtonData:>{
+           "Info3486114263-8286375", {"DoubleBracketingBar", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Delete",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Delete", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DoubleContourIntegral",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DoubleContourIntegral", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DeleteCases",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DeleteCases", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DoubleDownArrow",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DoubleDownArrow", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DeleteContents",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DeleteContents", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DoubleLeftArrow",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DoubleLeftArrow", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DeleteDirectory",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DeleteDirectory", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DoubleLeftRightArrow",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DoubleLeftRightArrow", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DeleteDuplicates",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DeleteDuplicates", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DoubleLeftTee",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DoubleLeftTee", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DeleteFile",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DeleteFile", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DoubleLongLeftArrow",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DoubleLongLeftArrow", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DeletionWarning",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DeletionWarning", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DoubleLongLeftRightArrow",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DoubleLongLeftRightArrow", "System`"}},
+          
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Delimiter",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Delimiter", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DoubleLongRightArrow",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DoubleLongRightArrow", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DelimiterFlashTime",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DelimiterFlashTime", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DoubleRightArrow",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DoubleRightArrow", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DelimiterMatching",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DelimiterMatching", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DoubleRightTee",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DoubleRightTee", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Delimiters",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Delimiters", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DoubleUpArrow",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DoubleUpArrow", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Denominator",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Denominator", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DoubleUpDownArrow",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DoubleUpDownArrow", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DensityGraphics",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DensityGraphics", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DoubleVerticalBar",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DoubleVerticalBar", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DensityPlot",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DensityPlot", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DoublyInfinite",
+          BaseStyle->"InformationLink",
+          ButtonData:>{
+           "Info3486114263-8286375", {"DoublyInfinite", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DependentVariables",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DependentVariables", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["Down",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Down", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Deploy",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Deploy", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DownArrow",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DownArrow", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Deployed",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Deployed", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DownArrowBar",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DownArrowBar", "System`"}},
+          
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Depth",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Depth", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DownArrowUpArrow",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DownArrowUpArrow", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Derivative",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Derivative", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DownLeftRightVector",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DownLeftRightVector", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DesignMatrix",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DesignMatrix", "System`"}},
+          
+          ButtonNote->"System`"], 
+         ButtonBox["DownLeftTeeVector",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DownLeftTeeVector", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Det",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Det", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DownLeftVector",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DownLeftVector", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DiacriticalPositioning",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DiacriticalPositioning", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DownLeftVectorBar",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DownLeftVectorBar", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Diagonal",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Diagonal", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DownRightTeeVector",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DownRightTeeVector", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DiagonalMatrix",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DiagonalMatrix", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DownRightVector",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DownRightVector", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Dialog",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Dialog", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DownRightVectorBar",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DownRightVectorBar", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DialogIndent",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DialogIndent", "System`"}},
+          
+          ButtonNote->"System`"], 
+         ButtonBox["DownTee",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DownTee", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DialogInput",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DialogInput", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DownTeeArrow",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DownTeeArrow", "System`"}},
+          
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DialogLevel",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DialogLevel", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DownValues",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DownValues", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DialogNotebook",
+          BaseStyle->"InformationLink",
+          ButtonData:>{
+           "Info3486114263-8286375", {"DialogNotebook", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DragAndDrop",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DragAndDrop", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DialogProlog",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DialogProlog", "System`"}},
+          
+          ButtonNote->"System`"], 
+         ButtonBox["DrawHighlighted",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DrawHighlighted", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DialogReturn",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DialogReturn", "System`"}},
+          
+          ButtonNote->"System`"], 
+         ButtonBox["Drop",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Drop", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DialogSymbols",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DialogSymbols", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DSolve",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DSolve", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Diamond",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Diamond", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["Dt",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Dt", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DiamondMatrix",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DiamondMatrix", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DualLinearProgramming",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DualLinearProgramming", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DiceDissimilarity",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DiceDissimilarity", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DumpGet",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DumpGet", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DictionaryLookup",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DictionaryLookup", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DumpSave",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DumpSave", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DifferenceDelta",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DifferenceDelta", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["Dynamic",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Dynamic", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DifferenceOrder",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DifferenceOrder", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DynamicBox",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DynamicBox", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DifferenceRoot",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DifferenceRoot", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DynamicBoxOptions",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DynamicBoxOptions", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DifferenceRootReduce",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DifferenceRootReduce", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DynamicEvaluationTimeout",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DynamicEvaluationTimeout", "System`"}},
+          
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Differences",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Differences", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DynamicModule",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DynamicModule", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DifferentialD",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DifferentialD", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DynamicModuleBox",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DynamicModuleBox", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DifferentialRoot",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DifferentialRoot", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DynamicModuleBoxOptions",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DynamicModuleBoxOptions", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DifferentialRootReduce",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DifferentialRootReduce", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DynamicModuleParent",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DynamicModuleParent", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DigitBlock",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DigitBlock", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DynamicModuleValues",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DynamicModuleValues", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DigitBlockMinimum",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DigitBlockMinimum", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DynamicSetting",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DynamicSetting", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DigitCharacter",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DigitCharacter", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DynamicUpdating",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DynamicUpdating", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DigitCount",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DigitCount", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DynamicWrapper",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DynamicWrapper", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DigitQ",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"DigitQ", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DynamicWrapperBox",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DynamicWrapperBox", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Dilation",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Dilation", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["DynamicWrapperBoxOptions",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486114263-8286375", {"DynamicWrapperBoxOptions", "System`"}},
+          
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Dimensions",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486114263-8286375", {"Dimensions", "System`"}},
+          ButtonNote->"System`"], ""}
+       },
+       DefaultBaseStyle->"InfoGrid",
+       GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.475]}}}]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}]}, 
+   Dynamic[Typeset`open$$],
+   ImageSize->Automatic]]], "Print", "InfoCell",
+ CellChangeTimes->{3.486132263491851*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "Divisors"}]], "Input",
+ CellChangeTimes->{{3.486132271667802*^9, 3.486132274537588*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["\<\"\\!\\(\\*RowBox[{\\\"Divisors\\\", \\\"[\\\", \
+StyleBox[\\\"n\\\", \\\"TI\\\"], \\\"]\\\"}]\\) gives a list of the integers \
+that divide \\!\\(\\*StyleBox[\\\"n\\\", \\\"TI\\\"]\\). \"\>", "MSG"], 
+  "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/Divisors"]}]], "Print", "PrintUsage",
+ CellChangeTimes->{3.486132277669695*^9},
+ CellTags->"Info3486114277-4367177"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Divisors", "[", "6", "]"}]], "Input",
+ CellChangeTimes->{{3.486132280611611*^9, 3.486132286740559*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "2", ",", "3", ",", "6"}], "}"}]], "Output",
+ CellChangeTimes->{3.486132288782419*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Divisors", "[", "28", "]"}]], "Input",
+ CellChangeTimes->{{3.4861322899025517`*^9, 3.486132294536281*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "2", ",", "4", ",", "7", ",", "14", ",", "28"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.486132295084365*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Divisors", "[", "105", "]"}]], "Input",
+ CellChangeTimes->{{3.4861322972525*^9, 3.486132302983733*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "3", ",", "5", ",", "7", ",", "15", ",", "21", ",", "35", ",", 
+   "105"}], "}"}]], "Output",
+ CellChangeTimes->{3.486132303552322*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Divisors", "[", "496", "]"}]], "Input",
+ CellChangeTimes->{{3.486132350333364*^9, 3.486132355499813*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "2", ",", "4", ",", "8", ",", "16", ",", "31", ",", "62", ",", 
+   "124", ",", "248", ",", "496"}], "}"}]], "Output",
+ CellChangeTimes->{3.4861323559015703`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Divisors", "[", "1024", "]"}]], "Input",
+ CellChangeTimes->{{3.486132404440481*^9, 3.4861324091113243`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "2", ",", "4", ",", "8", ",", "16", ",", "32", ",", "64", ",", 
+   "128", ",", "256", ",", "512", ",", "1024"}], "}"}]], "Output",
+ CellChangeTimes->{3.4861324095030537`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Divisors", "[", "8192", "]"}]], "Input",
+ CellChangeTimes->{{3.4861324109716167`*^9, 3.48613241412741*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "2", ",", "4", ",", "8", ",", "16", ",", "32", ",", "64", ",", 
+   "128", ",", "256", ",", "512", ",", "1024", ",", "2048", ",", "4096", ",", 
+   "8192"}], "}"}]], "Output",
+ CellChangeTimes->{3.4861324144973793`*^9}]
+}, Open  ]],
+
+Cell["\<\
+6, 28, and 496 are perfect numbers. If you add up all of the divisors that \
+are less than n, you get n.  1024 is a power of 2.  The program always lists \
+1 and n as divisors.\
+\>", "Text",
+ CellChangeTimes->{{3.486132473491748*^9, 3.486132534685155*^9}, {
+  3.486132602400584*^9, 3.486132684426878*^9}, {3.48613274326093*^9, 
+  3.486132762620022*^9}, {3.486133484053701*^9, 3.486133500028562*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "*Form*"}]], "Input",
+ CellChangeTimes->{{3.486132765915009*^9, 3.4861327738168297`*^9}, {
+  3.4862210146229887`*^9, 3.486221035772579*^9}}],
+
+Cell[BoxData[
+ DynamicModuleBox[{Typeset`open$$ = True}, 
+  PaneSelectorBox[{False->
+   RowBox[{
+    OpenerBox[Dynamic[Typeset`open$$],
+     ImageSize->Small], 
+    StyleBox["System`", "InfoHeading"]}], True->GridBox[{
+     {
+      RowBox[{
+       OpenerBox[Dynamic[Typeset`open$$],
+        ImageSize->Small], 
+       StyleBox["System`", "InfoHeading"]}]},
+     {GridBox[{
+        {
+         ButtonBox["AccountingForm",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"AccountingForm", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["LongForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"LongForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["AutoNumberFormatting",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"AutoNumberFormatting", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["MathMLForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"MathMLForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["BaseForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"BaseForm", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["MatrixForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"MatrixForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["BinaryFormat",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"BinaryFormat", "System`"}},
+          
+          ButtonNote->"System`"], 
+         ButtonBox["NumberForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"NumberForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["BlankForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"BlankForm", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["NumberFormat",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"NumberFormat", "System`"}},
+          
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["BoxForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"BoxForm", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["OutputForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"OutputForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["BoxFormFormatTypes",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"BoxFormFormatTypes", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["OutputFormData",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"OutputFormData", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["CapForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"CapForm", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["PaddedForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"PaddedForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["CForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"CForm", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["ParentForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"ParentForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["ColonForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"ColonForm", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["PasteBoxFormInlineCells",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"PasteBoxFormInlineCells", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["ColumnForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"ColumnForm", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["PointForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"PointForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["CommonDefaultFormatTypes",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"CommonDefaultFormatTypes", "System`"}},
+          
+          ButtonNote->"System`"], 
+         ButtonBox["PolynomialForm",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"PolynomialForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DateTicksFormat",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"DateTicksFormat", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["PrecedenceForm",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"PrecedenceForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultFormatType",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"DefaultFormatType", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["PrintForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"PrintForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultFormatTypeForStyle",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"DefaultFormatTypeForStyle", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["PromptForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"PromptForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultInlineFormatType",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"DefaultInlineFormatType", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["RealBlockDiagonalForm",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"RealBlockDiagonalForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultInputFormatType",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"DefaultInputFormatType", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["RecurringDigitsForm",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"RecurringDigitsForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultOutputFormatType",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"DefaultOutputFormatType", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["ReturnInputFormPacket",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"ReturnInputFormPacket", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultTextFormatType",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"DefaultTextFormatType", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["RuleForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"RuleForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DefaultTextInlineFormatType",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {
+            "DefaultTextInlineFormatType", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["ScientificForm",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"ScientificForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DisplayForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"DisplayForm", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["SequenceForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"SequenceForm", "System`"}},
+          
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["DOSTextFormat",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"DOSTextFormat", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["SetBoxFormNamesPacket",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"SetBoxFormNamesPacket", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["EdgeForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"EdgeForm", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["ShowShortBoxForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{
+           "Info3486203019-9888352", {"ShowShortBoxForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["EngineeringForm",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"EngineeringForm", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["SpaceForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"SpaceForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["ExcludedForms",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"ExcludedForms", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["StandardForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"StandardForm", "System`"}},
+          
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["FaceForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"FaceForm", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["StringForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"StringForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["FileFormat",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"FileFormat", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["StringFormat",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"StringFormat", "System`"}},
+          
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["FontForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"FontForm", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["StyleForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"StyleForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["Format",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"Format", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["SyntaxForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"SyntaxForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["FormatRules",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"FormatRules", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["TableForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"TableForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["FormatType",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"FormatType", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["TeXForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"TeXForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["FormatTypeAutoConvert",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"FormatTypeAutoConvert", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["TextForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"TextForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["FormatValues",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"FormatValues", "System`"}},
+          
+          ButtonNote->"System`"], 
+         ButtonBox["TraditionalForm",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"TraditionalForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["FormBox",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"FormBox", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["TreeForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"TreeForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["FormBoxOptions",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"FormBoxOptions", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["ValueForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"ValueForm", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["FortranForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"FortranForm", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["VerticalForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"VerticalForm", "System`"}},
+          
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["FullForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"FullForm", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["$BoxForms",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"$BoxForms", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["HoldForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"HoldForm", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["$DateStringFormat",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"$DateStringFormat", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["HorizontalForm",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"HorizontalForm", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["$ExportFormats",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"$ExportFormats", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["HornerForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"HornerForm", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["$FormatType",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"$FormatType", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["InputAutoFormat",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"InputAutoFormat", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["$ImportFormats",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"$ImportFormats", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["InputForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"InputForm", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["$OutputForms",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"$OutputForms", "System`"}},
+          
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["InputToBoxFormPacket",
+          BaseStyle->"InformationLink",
+          ButtonData:>{
+           "Info3486203019-9888352", {"InputToBoxFormPacket", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["$PrintForms",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"$PrintForms", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["JoinForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"JoinForm", "System`"}},
+          ButtonNote->"System`"], 
+         ButtonBox["$SuppressInputFormHeads",
+          BaseStyle->"InformationLink",
+          
+          ButtonData:>{
+           "Info3486203019-9888352", {"$SuppressInputFormHeads", "System`"}},
+          ButtonNote->"System`"]},
+        {
+         ButtonBox["LineForm",
+          BaseStyle->"InformationLink",
+          ButtonData:>{"Info3486203019-9888352", {"LineForm", "System`"}},
+          ButtonNote->"System`"], ""}
+       },
+       DefaultBaseStyle->"InfoGrid",
+       GridBoxItemSize->{"Columns" -> {{
+            Scaled[0.475]}}}]}
+    },
+    GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}]}, 
+   Dynamic[Typeset`open$$],
+   ImageSize->Automatic]]], "Print", "InfoCell",
+ CellChangeTimes->{3.4862210196227427`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"5", 
+   RowBox[{"a", "^", "2"}]}], " ", "+", " ", 
+  RowBox[{"7", 
+   RowBox[{"a", "^", "2"}]}]}]], "Input",
+ CellChangeTimes->{{3.486221040503619*^9, 3.486221044043825*^9}}],
+
+Cell[BoxData[
+ RowBox[{"12", " ", 
+  SuperscriptBox["a", "2"]}]], "Output",
+ CellChangeTimes->{
+  3.486132774196239*^9, {3.486221019746953*^9, 3.486221044323756*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"4", " ", "Kilometers"}], " ", "+", " ", 
+  RowBox[{"24", " ", "Kilometers"}]}]], "Input",
+ CellChangeTimes->{{3.486132777209908*^9, 3.486132782637055*^9}}],
+
+Cell[BoxData[
+ RowBox[{"28", " ", "Kilometers"}]], "Output",
+ CellChangeTimes->{3.486132782903614*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"120", " ", "lbs", " ", 
+  RowBox[{"(", 
+   RowBox[{"1", " ", 
+    RowBox[{"Kg", " ", "/", " ", 
+     RowBox[{"(", 
+      RowBox[{"2.2", " ", "lbs"}], ")"}]}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.486132785725668*^9, 3.48613279294379*^9}}],
+
+Cell[BoxData[
+ RowBox[{"54.54545454545455`", " ", "Kg"}]], "Output",
+ CellChangeTimes->{3.486132794576047*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"128", "/", "1024"}], " ", "+", " ", 
+  RowBox[{"64", "/", "288"}]}]], "Input",
+ CellChangeTimes->{{3.486132797802882*^9, 3.486132801084633*^9}}],
+
+Cell[BoxData[
+ FractionBox["25", "72"]], "Output",
+ CellChangeTimes->{3.486132801645679*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"10", " ", ">", " ", "7"}]], "Input",
+ CellChangeTimes->{{3.486132803066928*^9, 3.486132803893962*^9}}],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.486132804431139*^9}]
+}, Open  ]],
+
+Cell["\<\
+It can use variables.  It can handle units using multiple-letter variable \
+names.  It can use fractions.  It displays Boolean results as \"True\" and \
+\"False\" rather than as 0 or 1.
+\
+\>", "Text",
+ CellChangeTimes->{{3.486132824320916*^9, 3.486132931888317*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{"365", " ", 
+    RowBox[{"days", "/", "year"}]}], ")"}], "*", 
+  RowBox[{"(", 
+   RowBox[{"24", " ", 
+    RowBox[{"hour", "/", "days"}]}], ")"}], " ", "*", " ", 
+  RowBox[{"(", 
+   RowBox[{"60", " ", 
+    RowBox[{"minute", " ", "/", " ", "hour"}]}], ")"}], " ", 
+  RowBox[{"(", 
+   RowBox[{"60", " ", 
+    RowBox[{"seconds", " ", "/", " ", "minute"}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.4861329375139027`*^9, 3.4861331407545347`*^9}, {
+  3.486133193446497*^9, 3.486133268680417*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"31536000", " ", "seconds"}], "year"]], "Output",
+ CellChangeTimes->{
+  3.486133099470099*^9, 3.486133141980459*^9, {3.486133207393372*^9, 
+   3.486133240734116*^9}, 3.486133270833644*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "RandomInteger*"}]], "Input",
+ CellChangeTimes->{{3.486133284381013*^9, 3.486133296205147*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["\<\"\\!\\(\\*RowBox[{\\\"RandomInteger\\\", \\\"[\\\", RowBox[{\\\
+\"{\\\", RowBox[{SubscriptBox[StyleBox[\\\"i\\\", \\\"TI\\\"], \
+StyleBox[\\\"min\\\", \\\"TI\\\"]], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"i\\\", \\\"TI\\\"], StyleBox[\\\"max\\\", \
+\\\"TI\\\"]]}], \\\"}\\\"}], \\\"]\\\"}]\\) gives a pseudorandom integer in \
+the range \\!\\(\\*RowBox[{\\\"{\\\", RowBox[{SubscriptBox[\\\"i\\\", \\\"min\
+\\\"], \\\",\\\", \\\"\[Ellipsis]\\\", \\\",\\\", SubscriptBox[\\\"i\\\", \
+\\\"max\\\"]}], \\\"}\\\"}]\\). \\n\\!\\(\\*RowBox[{\\\"RandomInteger\\\", \\\
+\"[\\\", SubscriptBox[StyleBox[\\\"i\\\", \\\"TI\\\"], StyleBox[\\\"max\\\", \
+\\\"TI\\\"]], \\\"]\\\"}]\\) gives a pseudorandom integer in the range \\!\\(\
+\\*RowBox[{\\\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"\[Ellipsis]\\\", \
+\\\",\\\", SubscriptBox[\\\"i\\\", \\\"max\\\"]}], \\\"}\\\"}]\\). \
+\\n\\!\\(\\*RowBox[{\\\"RandomInteger\\\", \\\"[\\\", \\\"]\\\"}]\\) \
+pseudorandomly gives 0 or 1. \\n\\!\\(\\*RowBox[{\\\"RandomInteger\\\", \\\"[\
+\\\", RowBox[{StyleBox[\\\"range\\\", \\\"TI\\\"], \\\",\\\", \
+StyleBox[\\\"n\\\", \\\"TI\\\"]}], \\\"]\\\"}]\\) gives a list of \
+\\!\\(\\*StyleBox[\\\"n\\\", \\\"TI\\\"]\\) pseudorandom integers. \
+\\n\\!\\(\\*RowBox[{\\\"RandomInteger\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"range\\\", \\\"TI\\\"], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{SubscriptBox[StyleBox[\\\"n\\\", \\\"TI\\\"], StyleBox[\\\"1\\\", \
+\\\"TR\\\"]], \\\",\\\", SubscriptBox[StyleBox[\\\"n\\\", \\\"TI\\\"], \
+StyleBox[\\\"2\\\", \\\"TR\\\"]], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\
+\"TR\\\"]}], \\\"}\\\"}]}], \\\"]\\\"}]\\) gives an \
+\\!\\(\\*RowBox[{SubscriptBox[\\\"n\\\", \\\"1\\\"], \\\"\[Cross]\\\", \
+SubscriptBox[\\\"n\\\", \\\"2\\\"], \\\"\[Cross]\\\", \\\"\[Ellipsis]\\\", \\\
+\" \\\"}]\\) array of pseudorandom integers. \
+\\n\\!\\(\\*RowBox[{\\\"RandomInteger\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"dist\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"\
+\[Ellipsis]\\\", \\\"TR\\\"]}], \\\"]\\\"}]\\) samples from the symbolic \
+discrete distribution \\!\\(\\*StyleBox[\\\"dist\\\", \\\"TI\\\"]\\).\"\>", 
+   "MSG"], "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/RandomInteger"]}]], "Print", "PrintUsage",
+ CellChangeTimes->{3.486133297227214*^9},
+ CellTags->"Info3486115297-5089147"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RandomInteger", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"50", ",", "100"}], "}"}], ",", "3"}], "]"}]], "Input",
+ CellChangeTimes->{{3.4861333010075893`*^9, 3.4861333179557667`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"92", ",", "88", ",", "86"}], "}"}]], "Output",
+ CellChangeTimes->{3.486133337966098*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Apply", "[", 
+  RowBox[{"Plus", ",", "%"}], "]"}]], "Input",
+ CellChangeTimes->{{3.486133339558597*^9, 3.4861334012061768`*^9}}],
+
+Cell[BoxData["266"], "Output",
+ CellChangeTimes->{3.486133409207499*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Sqrt", 
+  RowBox[{"(", "4", ")"}]}]], "Input",
+ CellChangeTimes->{{3.48613342427845*^9, 3.4861334275385447`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"4", " ", "Sqrt"}]], "Output",
+ CellChangeTimes->{3.4861334280686502`*^9}]
+}, Open  ]],
+
+Cell["\<\
+The program considers Sqrt to be a variable because we didn't call it using \
+brackets.\
+\>", "Text",
+ CellChangeTimes->{{3.4861334492178373`*^9, 3.486133471470443*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"a", "=", "b"}]], "Input",
+ CellChangeTimes->{{3.48613350676493*^9, 3.486133540002344*^9}}],
+
+Cell[BoxData["b"], "Output",
+ CellChangeTimes->{3.486133540535843*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"a", "\[Equal]", "b"}]], "Input",
+ CellChangeTimes->{{3.48613354125562*^9, 3.486133541973072*^9}}],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.486133542404027*^9}]
+}, Open  ]],
+
+Cell["\<\
+a=b makes the computer think that a is equal to b and then it displays what \
+is set a to.
+a == b has it test if a is equal to be and then say whether it is true.\
+\>", "Text",
+ CellChangeTimes->{{3.4861335436296577`*^9, 3.486133635850589*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "Trace"}]], "Input",
+ CellChangeTimes->{{3.486133639660301*^9, 3.4861336446906023`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["\<\"\\!\\(\\*RowBox[{\\\"Trace\\\", \\\"[\\\", \
+StyleBox[\\\"expr\\\", \\\"TI\\\"], \\\"]\\\"}]\\) generates a list of all \
+expressions used in the evaluation of \\!\\(\\*StyleBox[\\\"expr\\\", \
+\\\"TI\\\"]\\). \\n\\!\\(\\*RowBox[{\\\"Trace\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"expr\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"form\\\", \
+\\\"TI\\\"]}], \\\"]\\\"}]\\) includes only those expressions which match \\!\
+\\(\\*StyleBox[\\\"form\\\", \\\"TI\\\"]\\). \
+\\n\\!\\(\\*RowBox[{\\\"Trace\\\", \\\"[\\\", RowBox[{StyleBox[\\\"expr\\\", \
+\\\"TI\\\"], \\\",\\\", StyleBox[\\\"s\\\", \\\"TI\\\"]}], \\\"]\\\"}]\\) \
+includes all evaluations which use transformation rules associated with the \
+symbol \\!\\(\\*StyleBox[\\\"s\\\", \\\"TI\\\"]\\). \"\>", "MSG"], 
+  "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/Trace"]}]], "Print", "PrintUsage",
+ CellChangeTimes->{3.486133648153784*^9},
+ CellTags->"Info3486115647-4195003"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Trace", "[", 
+  RowBox[{"5", 
+   RowBox[{"(", 
+    RowBox[{"4", "+", "3"}], ")"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.486133651552739*^9, 3.486133660977363*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     TagBox[
+      RowBox[{"4", "+", "3"}],
+      HoldForm], ",", 
+     TagBox["7",
+      HoldForm]}], "}"}], ",", 
+   TagBox[
+    RowBox[{"5", " ", "7"}],
+    HoldForm], ",", 
+   TagBox["35",
+    HoldForm]}], "}"}]], "Output",
+ CellChangeTimes->{3.486133661439415*^9}]
+}, Open  ]],
+
+Cell["\<\
+It says that Trace tells you all the things the computer evaluated when it \
+calculated 5 * (4 + 3).  So first it calculates what 4 + 3 is and sees that \
+it is 7.  Then it evaluates 5 * 7 to get the answer of 35.\
+\>", "Text",
+ CellChangeTimes->{{3.486133723171701*^9, 3.486133776191348*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "Head"}]], "Input",
+ CellChangeTimes->{{3.486133783893569*^9, 3.4861337857598333`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["\<\"\\!\\(\\*RowBox[{\\\"Head\\\", \\\"[\\\", StyleBox[\\\"expr\\\
+\", \\\"TI\\\"], \\\"]\\\"}]\\) gives the head of \
+\\!\\(\\*StyleBox[\\\"expr\\\", \\\"TI\\\"]\\). \"\>", "MSG"], 
+  "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/Head"]}]], "Print", "PrintUsage",
+ CellChangeTimes->{3.4861337862188587`*^9},
+ CellTags->"Info3486115786-2068987"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Head", "[", "x", "]"}], " "}]], "Input",
+ CellChangeTimes->{{3.486133810974279*^9, 3.4861338120380774`*^9}, {
+  3.486133876099483*^9, 3.48613389510075*^9}, {3.486133925128194*^9, 
+  3.486133988673065*^9}}],
+
+Cell[BoxData["Symbol"], "Output",
+ CellChangeTimes->{3.486133903225761*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Head", "[", "78", "]"}]], "Input",
+ CellChangeTimes->{{3.486133818457335*^9, 3.486133823941218*^9}}],
+
+Cell[BoxData["Integer"], "Output",
+ CellChangeTimes->{3.486133824331316*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Head", "[", ".2", "]"}]], "Input",
+ CellChangeTimes->{{3.486133828930624*^9, 3.486133832428554*^9}}],
+
+Cell[BoxData["Real"], "Output",
+ CellChangeTimes->{3.4861338331027803`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Head", "[", "Pi", "]"}]], "Input",
+ CellChangeTimes->{{3.486133834422719*^9, 3.486133836742147*^9}}],
+
+Cell[BoxData["Symbol"], "Output",
+ CellChangeTimes->{3.486133837410344*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Head", "[", 
+  RowBox[{"Sqrt", "[", "2", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.486133838854052*^9, 3.486133842667995*^9}}],
+
+Cell[BoxData["Power"], "Output",
+ CellChangeTimes->{3.486133843074172*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Head", "[", 
+  RowBox[{"1", "/", "2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.486133844396779*^9, 3.4861338472196817`*^9}}],
+
+Cell[BoxData["Rational"], "Output",
+ CellChangeTimes->{3.4861338476665907`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Head", "[", 
+  RowBox[{"1", "/", "2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.486133848707015*^9, 3.486133851340385*^9}}],
+
+Cell[BoxData["Rational"], "Output",
+ CellChangeTimes->{3.486133852009364*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Head", "[", "7", "]"}]], "Input",
+ CellChangeTimes->{{3.486133852716756*^9, 3.4861338573746347`*^9}}],
+
+Cell[BoxData["Integer"], "Output",
+ CellChangeTimes->{3.486133857654986*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Head", "[", 
+  RowBox[{"3", "+", "4"}], "]"}]], "Input",
+ CellChangeTimes->{{3.48613385849609*^9, 3.4861338607837543`*^9}}],
+
+Cell[BoxData["Integer"], "Output",
+ CellChangeTimes->{3.4861338611799088`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Head", "[", 
+  RowBox[{"x", "/", "y"}], "]"}]], "Input",
+ CellChangeTimes->{{3.486133862187854*^9, 3.486133865834305*^9}}],
+
+Cell[BoxData["Times"], "Output",
+ CellChangeTimes->{3.486133866392362*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Head", "[", 
+  RowBox[{"Divisors", "[", "6", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.486133867232218*^9, 3.48613387180611*^9}}],
+
+Cell[BoxData["List"], "Output",
+ CellChangeTimes->{3.486133872205206*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Head", "[", 
+  RowBox[{"x", "+", "y"}], "]"}]], "Input",
+ CellChangeTimes->{{3.486134011881317*^9, 3.486134014484075*^9}}],
+
+Cell[BoxData["Plus"], "Output",
+ CellChangeTimes->{3.486134014870427*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"x", "=", "y"}], ";", " ", 
+  RowBox[{"Head", "[", 
+   RowBox[{"x", "+", "y"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.486134016757051*^9, 3.486134020862982*^9}}],
+
+Cell[BoxData["Times"], "Output",
+ CellChangeTimes->{3.486134021386592*^9}]
+}, Open  ]],
+
+Cell["\<\
+It prints Times because it evaluates x + y first and simplifies it to 2x or \
+2y, which is a multiplication.\
+\>", "Text",
+ CellChangeTimes->{{3.486134040139823*^9, 3.486134074056909*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Trace", "[", 
+  RowBox[{"x", "+", "y"}], "]"}]], "Input",
+ CellChangeTimes->{{3.486134076113373*^9, 3.48613408112219*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     TagBox["x",
+      HoldForm], ",", 
+     TagBox["y",
+      HoldForm]}], "}"}], ",", 
+   TagBox[
+    RowBox[{"y", "+", "y"}],
+    HoldForm], ",", 
+   TagBox[
+    RowBox[{"2", " ", "y"}],
+    HoldForm]}], "}"}]], "Output",
+ CellChangeTimes->{3.486134081603537*^9}]
+}, Open  ]]
+},
+WindowSize->{640, 750},
+WindowMargins->{{405, Automatic}, {117, Automatic}},
+ShowSelection->True,
+FrontEndVersion->"7.0 for Mac OS X x86 (32-bit) (February 18, 2009)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info3486114277-4367177"->{
+  Cell[50193, 1347, 500, 12, 39, "Print",
+   CellTags->"Info3486114277-4367177"]},
+ "Info3486115297-5089147"->{
+  Cell[75444, 2069, 2418, 39, 123, "Print",
+   CellTags->"Info3486115297-5089147"]},
+ "Info3486115647-4195003"->{
+  Cell[79832, 2188, 1062, 20, 85, "Print",
+   CellTags->"Info3486115647-4195003"]},
+ "Info3486115786-2068987"->{
+  Cell[81925, 2251, 477, 12, 39, "Print",
+   CellTags->"Info3486115786-2068987"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info3486114277-4367177", 86946, 2451},
+ {"Info3486115297-5089147", 87058, 2454},
+ {"Info3486115647-4195003", 87172, 2457},
+ {"Info3486115786-2068987", 87285, 2460}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 111, 2, 27, "Input"],
+Cell[681, 26, 49355, 1312, 2490, "Print"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[50073, 1343, 117, 2, 27, "Input"],
+Cell[50193, 1347, 500, 12, 39, "Print",
+ CellTags->"Info3486114277-4367177"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[50730, 1364, 127, 2, 27, "Input"],
+Cell[50860, 1368, 135, 3, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[51032, 1376, 130, 2, 27, "Input"],
+Cell[51165, 1380, 160, 4, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[51362, 1389, 127, 2, 27, "Input"],
+Cell[51492, 1393, 187, 5, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[51716, 1403, 129, 2, 27, "Input"],
+Cell[51848, 1407, 213, 5, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[52098, 1417, 132, 2, 27, "Input"],
+Cell[52233, 1421, 226, 5, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[52496, 1431, 131, 2, 27, "Input"],
+Cell[52630, 1435, 269, 6, 27, "Output"]
+}, Open  ]],
+Cell[52914, 1444, 409, 7, 41, "Text"],
+Cell[CellGroupData[{
+Cell[53348, 1455, 168, 3, 27, "Input"],
+Cell[53519, 1460, 18960, 496, 986, "Print"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[72516, 1961, 209, 6, 27, "Input"],
+Cell[72728, 1969, 166, 4, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[72931, 1978, 190, 4, 27, "Input"],
+Cell[73124, 1984, 102, 2, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[73263, 1991, 268, 7, 27, "Input"],
+Cell[73534, 2000, 110, 2, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[73681, 2007, 179, 4, 27, "Input"],
+Cell[73863, 2013, 92, 2, 47, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[73992, 2020, 126, 2, 27, "Input"],
+Cell[74121, 2024, 73, 1, 27, "Output"]
+}, Open  ]],
+Cell[74209, 2028, 276, 6, 56, "Text"],
+Cell[CellGroupData[{
+Cell[74510, 2038, 542, 15, 27, "Input"],
+Cell[75055, 2055, 226, 5, 49, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[75318, 2065, 123, 2, 27, "Input"],
+Cell[75444, 2069, 2418, 39, 123, "Print",
+ CellTags->"Info3486115297-5089147"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[77899, 2113, 211, 5, 27, "Input"],
+Cell[78113, 2120, 128, 3, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[78278, 2128, 152, 3, 27, "Input"],
+Cell[78433, 2133, 72, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[78542, 2139, 137, 3, 27, "Input"],
+Cell[78682, 2144, 97, 2, 27, "Output"]
+}, Open  ]],
+Cell[78794, 2149, 179, 4, 26, "Text"],
+Cell[CellGroupData[{
+Cell[78998, 2157, 114, 2, 27, "Input"],
+Cell[79115, 2161, 70, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[79222, 2167, 121, 2, 27, "Input"],
+Cell[79346, 2171, 73, 1, 27, "Output"]
+}, Open  ]],
+Cell[79434, 2175, 254, 5, 41, "Text"],
+Cell[CellGroupData[{
+Cell[79713, 2184, 116, 2, 27, "Input"],
+Cell[79832, 2188, 1062, 20, 85, "Print",
+ CellTags->"Info3486115647-4195003"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[80931, 2213, 191, 5, 27, "Input"],
+Cell[81125, 2220, 339, 15, 27, "Output"]
+}, Open  ]],
+Cell[81479, 2238, 303, 5, 41, "Text"],
+Cell[CellGroupData[{
+Cell[81807, 2247, 115, 2, 27, "Input"],
+Cell[81925, 2251, 477, 12, 39, "Print",
+ CellTags->"Info3486115786-2068987"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[82439, 2268, 240, 5, 27, "Input"],
+Cell[82682, 2275, 75, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[82794, 2281, 124, 2, 27, "Input"],
+Cell[82921, 2285, 76, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[83034, 2291, 124, 2, 27, "Input"],
+Cell[83161, 2295, 75, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[83273, 2301, 124, 2, 27, "Input"],
+Cell[83400, 2305, 75, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[83512, 2311, 154, 3, 27, "Input"],
+Cell[83669, 2316, 74, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[83780, 2322, 148, 3, 27, "Input"],
+Cell[83931, 2327, 79, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[84047, 2333, 146, 3, 27, "Input"],
+Cell[84196, 2338, 77, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[84310, 2344, 125, 2, 27, "Input"],
+Cell[84438, 2348, 76, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[84551, 2354, 147, 3, 27, "Input"],
+Cell[84701, 2359, 78, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[84816, 2365, 146, 3, 27, "Input"],
+Cell[84965, 2370, 74, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[85076, 2376, 157, 3, 27, "Input"],
+Cell[85236, 2381, 73, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[85346, 2387, 146, 3, 27, "Input"],
+Cell[85495, 2392, 73, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[85605, 2398, 198, 5, 27, "Input"],
+Cell[85806, 2405, 74, 1, 27, "Output"]
+}, Open  ]],
+Cell[85895, 2409, 198, 4, 26, "Text"],
+Cell[CellGroupData[{
+Cell[86118, 2417, 146, 3, 27, "Input"],
+Cell[86267, 2422, 336, 15, 27, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
